@@ -1,0 +1,82 @@
+<div layout="column" layout-fill>
+	<md-toolbar>
+		<div class="md-toolbar-tools" layout="row" layout-align="center center">
+
+			<a href="#"><img class="logo" src="assets/img/ibm-white.png" alt="IBM logo"> </a>
+
+			<p class="md-body-1 page-heading" data-content="{{ login.title }}"></p>
+			<!--<div style="width: 40px; height: 40px;"></div>-->
+
+			<md-button class="md-icon-button" aria-label="Menu" ng-click="cooHome.toggle()">
+				<!--<md-icon>menu</md-icon>-->
+			</md-button>
+
+		</div>
+	</md-toolbar>
+
+	<md-sidenav class="md-sidenav-left" md-component-id="left">
+	  <md-toolbar>
+		<h1 class="md-toolbar-tools">SideNav Menu</h1>
+	  </md-toolbar>
+	  <md-list ng-cloak>
+		<md-list-item ng-href="http://www.google.com/design/spec/material-design/introduction.html">
+		  <md-icon style="padding-right: 16px; color: #000000">school</md-icon>
+		  <md-icon md-font-library="material-icons">face</md-icon>
+		  <p>Material Design</p>
+		</md-list-item>
+		<md-list-item ng-href="https://material.angularjs.org/latest/">
+		  <md-icon style="padding-right: 16px; color: #000000">settings_ethernet</md-icon>
+		  <p>Angular Material</p>
+		</md-list-item>
+	  </md-list>
+	</md-sidenav>
+
+	<md-content>
+		<div layout="row"  class="md-layout-row layout-margin loginform" layout-xs="column" layout-sm="column" layout-gt-sm="row" layout-align="center center" >
+			<div flex layout-padding >
+				<!-- Using Angular Material 6.1 + Jade Templates-->
+<div  layout="row"  layout-align="center center" layout-fill="layout-fill">
+    <md-card flex="flex" flex-gt-sm="50" flex-gt-md="33">
+        <md-card-content>
+         <form name="loginForm"  class="container-fluid" ng-submit="login.loginForm()" layout-align="center center">
+            <div id="messages" class="alert alert-warning alert-dismissible inner " data-ng-show="messages" data-ng-bind="messages"></div>
+             <md-input-container class="md-block">
+              <label>Username</label>
+    
+      <md-icon md-font-icon="material-icons" aria-label="Username">person</md-icon>
+              <input type="text" name="username" ng-model="login.formData.username"  required=""/>
+              <div ng-messages="loginForm.username.$error"  ng-show="loginForm.$submitted || loginForm.username.$dirty || (loginForm.username.$invalid && loginForm.username.$touched)" role="alert" multiple="">
+                <div class="my-message" ng-message="required" ng-hide="loginForm.username.$valid">You must enter a username.</div>
+              </div>
+            </md-input-container>
+            <md-input-container class="md-block">
+             	<label>Password</label>
+       			<md-icon md-font-icon="material-icons" aria-label="password">lock</md-icon>
+              <input type="password" name="password" ng-model="login.formData.password" required=""  />
+              <div ng-messages="loginForm.password.$error"  ng-show="loginForm.$submitted || loginForm.password.$dirty || (loginForm.password.$invalid && loginForm.password.$touched)" role="alert" multiple="">
+                <div class="my-message" ng-message="required" ng-hide="loginForm.password.$valid">You must supply a password.</div>
+                <div class="my-message" ng-message="md-maxlength" ng-if="login.getLength(login.formData.password)>16">It is too long it must be under 16 chars </div>
+              </div>
+            </md-input-container>
+            <div layout="row"  >
+                <div flex-gt-sm="50">
+                  <md-checkbox ng-model="login.formData.rememberMe" aria-label="Remember me">
+                    Remember me <!--{{ data.cb1 }}-->
+                  </md-checkbox>
+                </div>
+      		</div>
+            <md-button type="submit" class="md-raised md-primary loginbtn" ng-click="login.loginForm()" >&nbsp Log in &nbsp;</md-button>
+          </form>
+        </md-card-content>
+      </md-card>
+  </div>
+</div>
+
+			
+		</div>
+
+
+
+	</md-content>
+
+</div>

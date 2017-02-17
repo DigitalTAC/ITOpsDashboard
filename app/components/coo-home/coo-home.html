@@ -1,0 +1,244 @@
+<div layout="column" layout-fill>
+	<md-toolbar>
+		<!--<div class="md-toolbar-tools" layout="row" layout-align="space-between center">-->
+		<div class="md-toolbar-tools" layout="row" layout-align="center center">
+
+			<a class="link-client" href="#">
+				<img class="logo" src="assets/img/ibm-white.png" alt="IBM logo">
+			</a>
+
+			<p class="md-body-1 page-heading md-accent" data-content="{{ cooHome.title }}">{{ cooHome.title }}</p>
+
+			<div class="user-role md-body-smallest" >{{ cooHome.userRole }}</div>
+
+			<md-button class="md-icon-button hamburger-button" aria-label="Menu" ng-click="cooHome.toggleRight()">
+				<md-icon>menu</md-icon>
+			</md-button>
+
+
+
+		</div>
+	</md-toolbar>
+	<md-toolbar class="timestamp-container">
+    <div class="md-toolbar-tools"><p>Updated on <span class="timestamp">16-Feb-2016 00:15:30</span></p></div>
+	</md-toolbar>
+
+	<md-sidenav class="md-sidenav-right" md-component-id="right">
+	  <md-toolbar>
+		<!--<h1 class="md-toolbar-tools">{{ cooHome.title }}</h1>-->
+	  </md-toolbar>
+	   <md-list ng-cloak>
+		<md-list-item ng-href="#/coo-home">
+		  <!--<md-icon md-font-library="material-icons">home</md-icon>-->
+		  <p>COO</p>
+		</md-list-item>
+		<md-list-item ng-href="#/om-home">
+		  <!--<md-icon md-font-library="material-icons">person</md-icon>-->
+		  <p>Manager</p>
+		</md-list-item>
+        <md-list-item ng-href="#/ot-home">
+		 <!-- <md-icon md-font-library="material-icons">person</md-icon>-->
+		  <p>Team Member</p>
+		</md-list-item>
+        <md-list-item ng-href="#/login">
+		 <!-- <md-icon md-font-library="material-icons">power_settings_new</md-icon>-->
+		  <p>Logout</p>
+		</md-list-item>
+	  </md-list>
+	</md-sidenav>
+
+	<md-content>
+
+		<div layout="row" layout-xs="column" layout-sm="column" layout-gt-sm="row" layout-align="space-between none">
+			<div flex layout-padding >
+				<md-grid-list md-cols-xs="2" md-cols-gt-xs="4" md-cols-sm="4" md-cols-gt-sm="4" md-cols-md="8" md-cols-gt-md="8" md-cols-lg="8" md-row-height="1:1" md-gutter="8px">
+
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Raised Today</p>
+									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.raisedTodayCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Solved Today</p>
+									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.solvedTodayCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Escalations</p>
+									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.escalationsCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Open</p>
+									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openTotalCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S1</p>
+								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS1Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S2</p>
+								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS2Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S3</p>
+								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS3Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S4</p>
+								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS4Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+
+				</md-grid-list>
+
+				<md-grid-list md-cols-xs="1" md-cols-gt-xs="1" md-cols-sm="1" md-cols-gt-sm="1" md-cols-md="2" md-cols-gt-md="2" md-cols-lg="2" md-row-height="4:2" md-gutter="8px">
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="none none">
+
+									<div layout="row" layout-align="space-between top">
+										<p class="md-body-smallest kpi-label">Ticket Trend</p>
+
+										<p class="md-body-smallest time-reference">{{ cooHome.timerefTrend }}</p>
+
+										<md-select class="md-body-smallest" ng-model="cooHome.selectedTrendGroup.id" ng-change="onTrendGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups">{{ group.label }}</md-option>
+										</md-select>
+									</div>
+									<div class="chart-container">
+										<flot dataset="trendDataset" options="trendOptions" layout-fill style="max-height: 150px;"></flot>
+									</div>
+									<div class="trend-Chart legend-container"></div>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="none none">
+									<div layout="row" layout-align="space-between top">
+										<p class="md-body-smallest kpi-label">S1 & S2 Raised Trend</p>
+
+										<p class="md-body-smallest time-reference">2017</p>
+
+										<md-select class="md-body-smallest" ng-model="cooHome.selectedS1S2TrendGroup.id" ng-change="onS1S2TrendGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups">{{ group.label }}</md-option>
+										</md-select>
+									</div>
+									<div class="chart-container">
+										<flot dataset="s1S2TrendDataset" options="s1S2TrendOptions" layout-fill style="max-height: 150px;"></flot>
+									</div>
+									<div class="s1s2-trend-Chart legend-container"></div>
+								</md-card-content>
+
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="none none">
+									<div layout="row" layout-align="space-between top">
+										<p class="md-body-smallest kpi-label">S3 & S4 Raised Trend</p>
+
+										<p class="md-body-smallest time-reference">2017</p>
+
+										<md-select class="md-body-smallest" ng-model="cooHome.selectedS3S4TrendGroup.id" ng-change="onS3S4TrendGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups">{{ group.label }}</md-option>
+										</md-select>
+									</div>
+									<div class="chart-container">
+										<flot dataset="s3S4TrendDataset" options="s3S4TrendOptions" layout-fill style="max-height: 150px;"></flot>
+									</div>
+									<div class="s3s4-trend-Chart legend-container"></div>
+								</md-card-content>
+
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<!--<md-card-content layout-fill layout="column" layout-align="space-around start">-->
+								<md-card-content layout-fill layout="column" layout-align="none none">
+									<div layout="row" layout-align="space-between top">
+										<p class="md-body-smallest kpi-label">Ticket Categories</p>
+
+										<p class="md-body-smallest time-reference">2017</p>
+
+										<md-select ng-model="cooHome.selectedCategoryGroup.id" ng-change="onCategoryGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketCategoryGroups">{{ group.label }}</md-option>
+										</md-select>
+									</div>
+
+
+									<div class="chart-container">
+										<flot dataset="categoriesDataset" options="categoriesOptions" layout-fill style="max-height: 150px;"></flot>
+									</div>
+									<div class="category-Chart legend-container"></div>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+				</md-grid-list>
+			</div>
+		</div>
+
+
+
+	</md-content>
+
+</div>

@@ -1,0 +1,73 @@
+[{
+                        "sessionID": "asfsASCXZ2342323xzwqeweqwrrwrwqAAsfw",
+						"username" : "coo",
+						"password" : "coo",
+                        "status" : {
+								"statusCode" : "200",
+								"statusMsg" : "Logged in successfully."
+								},
+                        "userProfile": {
+								"firstName":"Rebecca",
+								"lastName":"Sindhi",
+								"role" : "COO"
+								}
+},
+{
+                        "sessionID": "asfsASCXZ2342323xzwqeweqwrrwrwqAAsfw",
+						"username" : "om",
+						"password" : "om",
+                        "status" : {
+								"statusCode" : "200",
+								"statusMsg" : "Logged in successfully."
+								},
+                        "userProfile": {
+								"firstName":"Hemant",
+								"lastName":"Sindhi",
+								"role" : "OM"
+								}
+},
+{
+                        "sessionID": "asfsASCXZ2342323xzwqeweqwrrwrwqAAsfw",
+						"username" : "ot1",
+						"password" : "ot1",
+                        "status" : {
+								"statusCode" : "200",
+								"statusMsg" : "Logged in successfully."
+								},
+                        "userProfile": {
+								"firstName":"Sushil",
+								"lastName":"Thanvi",
+								"role" : "OT"
+								}
+},
+{
+                        "sessionID": "asfsASCXZ2342323xzwqeweqwrrwrwqAAsfw",
+						"username" : "ot2",
+						"password" : "ot2",
+                        "status" : {
+								"statusCode" : "200",
+								"statusMsg" : "Logged in successfully."
+								},
+                        "userProfile": {
+								"firstName":"Chandan",
+								"lastName":"Bora",
+								"role" : "OT"
+								}
+},
+{
+                        "sessionID": "asfsASCXZ2342323xzwqeweqwrrwrwqAAsfw",
+						"username" : "ot3",
+						"password" : "ot3",
+                        "status" : {
+								"statusCode" : "200",
+								"statusMsg" : "Logged in successfully."
+								},
+                        "userProfile": {
+								"firstName":"Hussain",
+								"lastName":"Syed",
+								"role" : "OT"
+								}
+}
+]  
+
+

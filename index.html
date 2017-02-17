@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8"/>
+	<meta http-equiv="Content-Security-Policy">
+	<meta name="format-detection" content="telephone=no">
+	<meta name="msapplication-tap-highlight" content="no">
+	<meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/index.css">
+	<link rel="stylesheet" type="text/css" href="assets/lib/css/angular-material.min.css">
+
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,300,300italic,400italic,500,500italic,700,700italic">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Mono:400,700">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400">
+
+	<link rel="stylesheet" type="text/css" href="assets/css/chandan.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/font-responsive.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/login.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/table.css">
+	<link rel="stylesheet" type="text/css" href="assets/css/chart_custom.css">
+
+    <script src="assets/lib/js/jquery.min.js"></script>
+    <script src="assets/lib/js/flot/jquery.flot.js"></script>
+	<!--script src="assets/lib/js/flot/jquery.flot.min.js"></script-->
+
+    <!-- Flot Plugins -->
+	<script src="assets/lib/js/flot/jquery.flot.symbol.min.js"></script>
+	<!--script src="assets/lib/js/flot/jquery.flot.time.js"></script-->
+    <script src="assets/lib/js/flot/jquery.flot.categories.min.js"></script>
+    <script src="assets/lib/js/flot/jquery.flot.pie.min.js"></script>
+    <script src="assets/lib/js/flot/jquery.flot.resize.min.js"></script>
+	<script src="assets/lib/js/flot/jquery.flot.tooltip.js"></script>
+	<script src="assets/lib/js/flot/jquery.flot.valuelabels.js"></script>
+    <script src="assets/lib/js/flot/jquery.flot.orderBars.js"></script>
+	<!-- AngularJs -->
+    <script src="assets/lib/js/angular.min.js"></script>
+    <script src="assets/lib/js/angular-ui-router.min.js"></script>
+    <script src="assets/lib/js/angular-aria.min.js"></script>
+    <script src="assets/lib/js/angular-animate.min.js"></script>
+    <script src="assets/lib/js/ngStorage.min.js"></script>
+
+    <!-- Angular Material -->
+    <script src="assets/lib/js/angular-material.min.js"></script>
+	<!-- Angular flot -->
+	<script src="assets/lib/js/flot/angular-flot.js"></script>
+
+    <!-- Modules -->
+    <script src="app/app.js"></script>
+
+    <!-- Routes -->
+    <script src="app/routes.js"></script>
+
+    <!-- Services -->
+	<script src="app/shared/shared-service.js"></script>
+	<script src="app/factory/login-factory.js"></script>
+	<script src="app/services/dashboard-service.js"></script>
+    <script src="app/factory/ops-factoryOM.js"></script>
+    <script src="app/factory/ops-factoryOT.js"></script>
+	<!-- Controllers -->
+	<script src="app/components/main/main-controller.js"></script>
+	<script src="app/components/coo-home/coo-home-controller.js"></script>
+	<script src="app/components/login/login-controller.js"></script>
+	<script src="app/components/om-home/om-home-controller.js"></script>
+    <script src="app/components/ot-home/ot-home-controller.js"></script>
+
+    <title>IT Ops Dashboard</title>
+
+    <!-- Cordova -->
+    <script src="assets/lib/js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+
+</head>
+
+<body ng-cloak>
+
+	<ui-view></ui-view>
+
+</body>
+</html>

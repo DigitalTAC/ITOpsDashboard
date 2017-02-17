@@ -1,0 +1,134 @@
+/* from https://material.angularjs.org/latest/layout */
+@media only screen and (max-width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 599px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media only screen and (width: 600px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 601px) and (max-width: 959px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (width: 960px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width: 961px) and (max-width: 1279px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (width: 1280px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1919px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+@media only screen and (width: 1920px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+@media only screen and (min-width: 1921px) {
+  html {
+    font-size: 28px;
+  }
+}
+
+
+
+
+/* https://material.angularjs.org/latest/CSS/typography
+**
+12px = 1.2rem
+1px = 12/120rem
+**
+** Heading Styles
+*/
+
+.md-display-4 {
+	font-size: 112px;
+	font-size: 11.2rem !important;
+}
+.md-display-3 {
+	font-size: 56px;
+	font-size: 5.6rem !important;
+}
+.md-display-2 {
+	font-size: 45px;
+	font-size: 4.5rem !important;
+}
+.md-display-1 {
+	font-size: 34px;
+	font-size: 3.4rem !important;
+}
+.md-headline {
+	font-size: 24px;
+	font-size: 2.4rem !important;
+}
+.md-title {
+	font-size: 20px;
+	font-size: 2rem !important;
+}
+
+.md-subhead {
+	font-size: 16px;
+	font-size: 1.6rem !important;
+}
+
+
+/*
+** Body Copy
+*/
+
+.md-body-1 {
+	font-size: 14px;
+	font-size: 1.4rem !important;
+}
+
+.md-body-2 {
+	font-size: 14px;
+	font-size: 1.4rem !important;
+}
+
+.md-button {
+	font-size: 14px;
+	font-size: 1.4rem !important;
+}
+
+.md-caption {
+	font-size: 12px;
+	font-size: 1.2rem !important;
+}
+
+.md-body-smallest {
+	font-size: 0.9rem !important;
+}
+
+.tool-tip-font-size {
+	font-size: 0.8rem !important;
+}

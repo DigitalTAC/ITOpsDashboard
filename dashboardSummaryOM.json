@@ -1,0 +1,325 @@
+ [{
+ 	"raisedTodayCount": 40,
+ 	"solvedTodayCount": 25,
+ 	"escalationsCount": 15,
+ 	"openCount": {
+ 		"openTotalCount": 169,
+ 		"openS1Count": 5,
+ 		"openS2Count": 8,
+ 		"openS3Count": 55,
+ 		"openS4Count": 101
+ 	},
+	
+	"escalations": {
+		"all" : {
+			"totalCount" : 15,
+			"byApp" : [{
+				"appName" : "Metsa",
+				"escCount" : 5
+			},
+			{
+				"appName" : "M&S",
+				"escCount" : 3
+			},
+			{
+				"appName" : "Vodafone",
+				"escCount" : 4
+			},
+			{
+				"appName" : "Indosat",
+				"escCount" : 3
+			}],
+			"byPriority" : [{
+				"priority" : "P1",
+				"escCount" : 7
+			},{
+				"priority" : "P2",
+				"escCount" : 5
+			},{
+				"priority" : "P3",
+				"escCount" : 3
+			}]
+		}
+	},
+	
+	"openApproachingSLAs" : {
+		"totalOpenCount": 169,
+ 		"totalApproachingSLACount": 10,
+ 		 "byApp" : [{
+				"appName" : "Metsa",
+				"openCount" : 40,
+				"approachingSLACount" : 2
+			},
+			{
+				"appName" : "M&S",
+				"openCount" : 40,
+				"approachingSLACount" : 3
+			},
+			{
+				"appName" : "Vodafone",
+				"openCount" : 40,
+				"approachingSLACount" : 2
+			},
+			{
+				"appName" : "Indosat",
+				"openCount" : 49,
+				"approachingSLACount" : 3
+			}],
+			"byPerson" : [{
+				"personName" : "Joe Smith",
+				"openCount" : 40,
+				"approachingSLACount" : 2
+			},{
+				"personName" : "Paul Rider",
+				"openCount" : 40,
+				"approachingSLACount" : 3
+			},{
+				"personName" : "Ali Ahmed",
+				"openCount" : 49,
+				"approachingSLACount" : 3
+			},{
+				"personName" : "Alan William",
+				"openCount" : 40,
+				"approachingSLACount" : 2
+			}]
+		
+		
+	},
+	
+	"resolutionSLACompliance" : {
+		"byApp" : {
+			"WTDData" : [{
+				"appName" : "Metsa",
+				"withinSLACount" : 20,
+				"beyondSLACount" : 10 
+			},{
+				"appName" : "M&S",
+				"withinSLACount" : 25,
+				"beyondSLACount" : 20 
+			},{
+				"appName" : "Vodafone",
+				"withinSLACount" : 30,
+				"beyondSLACount" : 30 
+			},{
+				"appName" : "Indosat",
+				"withinSLACount" : 42,
+				"beyondSLACount" : 40 
+			}],
+			"MTDData" : [{
+				"appName" : "Metsa",
+				"withinSLACount" : 15,
+				"beyondSLACount" : 5 
+			},{
+				"appName" : "M&S",
+				"withinSLACount" : 15,
+				"beyondSLACount" : 6 
+			},{
+				"appName" : "Vodafone",
+				"withinSLACount" : 20,
+				"beyondSLACount" : 7 
+			},{
+				"appName" : "Indosat",
+				"withinSLACount" : 25,
+				"beyondSLACount" : 10 
+			}],
+			"QTDData" : [{
+				"appName" : "Metsa",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 20 
+			},{
+				"appName" : "M&S",
+				"withinSLACount" : 145,
+				"beyondSLACount" : 23 
+			},{
+				"appName" : "Vodafone",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 60 
+			},{
+				"appName" : "Indosat",
+				"withinSLACount" : 408,
+				"beyondSLACount" : 90 
+			}],
+			"YTDData" : [{
+				"appName" : "Metsa",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 20 
+			},{
+				"appName" : "M&S",
+				"withinSLACount" : 145,
+				"beyondSLACount" : 23 
+			},{
+				"appName" : "Vodafone",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 60 
+			},{
+				"appName" : "Indosat",
+				"withinSLACount" : 408,
+				"beyondSLACount" : 90 
+			}]
+		},
+		
+		"byPerson" : {
+			"WTDData" : [{
+				"personName" : "Joe Smith",
+				"withinSLACount" : 20,
+				"beyondSLACount" : 10 
+			},{
+				"personName" : "Paul Rider",
+				"withinSLACount" : 25,
+				"beyondSLACount" : 20 
+			},{
+				"personName" : "Alan William",
+				"withinSLACount" : 30,
+				"beyondSLACount" : 30 
+			},{
+				"personName" : "Ali Ahmed",
+				"withinSLACount" : 42,
+				"beyondSLACount" : 40 
+			}],
+			"MTDData" : [{
+				"personName" : "Joe Smith",
+				"withinSLACount" : 15,
+				"beyondSLACount" : 5 
+			},{
+				"personName" : "Paul Rider",
+				"withinSLACount" : 15,
+				"beyondSLACount" : 6 
+			},{
+				"personName" : "Alan William",
+				"withinSLACount" : 20,
+				"beyondSLACount" : 7 
+			},{
+				"personName" : "Ali Ahmed",
+				"withinSLACount" : 25,
+				"beyondSLACount" : 10 
+			}],
+			"QTDData" : [{
+				"personName" : "Joe Smith",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 20 
+			},{
+				"personName" : "Paul Rider",
+				"withinSLACount" : 145,
+				"beyondSLACount" : 23 
+			},{
+				"personName" : "Alan William",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 60 
+			},{
+				"personName" : "Ali Ahmed",
+				"withinSLACount" : 408,
+				"beyondSLACount" : 90 
+			}],
+			"YTDData" : [{
+				"personName" : "Joe Smith",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 20 
+			},{
+				"personName" : "Paul Rider",
+				"withinSLACount" : 145,
+				"beyondSLACount" : 23 
+			},{
+				"personName" : "Alan William",
+				"withinSLACount" : 150,
+				"beyondSLACount" : 60 
+			},{
+				"personName" : "Ali Ahmed",
+				"withinSLACount" : 408,
+				"beyondSLACount" : 90 
+			}]
+		}
+		
+		
+	},
+	
+	"ticketVolume" : {
+		"WTDData" : [{
+				"appName" : "Metsa",
+				"raisedCount" : 60,
+				"resolvedCount" : 30,
+				"openCount" : 30
+			},{
+				"appName" : "M&S",
+				"raisedCount" : 60,
+				"resolvedCount" : 45,
+				"openCount" : 15
+			},{
+				"appName" : "Vodafone",
+				"raisedCount" : 80,
+				"resolvedCount" : 60,
+				"openCount" : 20
+			},{
+				"appName" : "Indosat",
+				"raisedCount" : 100,
+				"resolvedCount" : 82,
+				"openCount" : 18
+			}],
+			"MTDData" : [{
+				"appName" : "Metsa",
+				"raisedCount" : 37,
+				"resolvedCount" : 20,
+				"openCount" : 17
+			},{
+				"appName" : "M&S",
+				"raisedCount" : 38,
+				"resolvedCount" : 21,
+				"openCount" : 17
+			},{
+				"appName" : "Vodafone",
+				"raisedCount" : 44,
+				"resolvedCount" : 27,
+				"openCount" : 17
+			},{
+				"appName" : "Indosat",
+				"raisedCount" : 61,
+				"resolvedCount" : 35,
+				"openCount" : 26
+			}],
+			"QTDData" : [{
+				"appName" : "Metsa",
+				"raisedCount" : 210,
+				"resolvedCount" : 170,
+				"openCount" : 40
+			},{
+				"appName" : "M&S",
+				"raisedCount" : 208,
+				"resolvedCount" : 168,
+				"openCount" : 40
+			},{
+				"appName" : "Vodafone",
+				"raisedCount" : 250,
+				"resolvedCount" : 210,
+				"openCount" : 40
+			},{
+				"appName" : "Indosat",
+				"raisedCount" : 547,
+				"resolvedCount" : 498,
+				"openCount" : 49
+			}],
+			"YTDData" : [{
+				"appName" : "Metsa",
+				"raisedCount" : 210,
+				"resolvedCount" : 170,
+				"openCount" : 40
+			},{
+				"appName" : "M&S",
+				"raisedCount" : 208,
+				"resolvedCount" : 168,
+				"openCount" : 40
+			},{
+				"appName" : "Vodafone",
+				"raisedCount" : 250,
+				"resolvedCount" : 210,
+				"openCount" : 40
+			},{
+				"appName" : "Indosat",
+				"raisedCount" : 547,
+				"resolvedCount" : 498,
+				"openCount" : 49
+			}]
+		
+	}
+}]
+	
+	
+ 		

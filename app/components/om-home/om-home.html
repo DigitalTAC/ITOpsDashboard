@@ -1,0 +1,334 @@
+<div layout="column" layout-fill>
+	<md-toolbar>
+		<div class="md-toolbar-tools" layout="row" layout-align="center center">
+
+			<a href="#"><img class="logo" src="assets/img/ibm-white.png" alt="IBM logo"> </a>
+
+			<p class="md-body-1 page-heading" data-content="{{ omHome.title }}">{{ omHome.title }}</p>
+
+			<div class="user-role md-body-smallest" >{{ omHome.userRole }}</div>
+
+			<md-button class="md-icon-button hamburger-button" aria-label="Menu" ng-click="omHome.toggleRight()">
+				<md-icon>menu</md-icon>
+			</md-button>
+		</div>
+	</md-toolbar>
+	<md-toolbar class="timestamp-container">
+    <div class="md-toolbar-tools"><p>Updated on <span class="timestamp">16-Feb-2016 00:15:30</span></p></div>
+	</md-toolbar>
+
+	<md-sidenav class="md-sidenav-right" md-component-id="right">
+	  <md-toolbar>
+		<!--<h1 class="md-toolbar-tools">{{ omHome.title }}</h1>-->
+	  </md-toolbar>
+	   <md-list ng-cloak>
+		<md-list-item ng-href="#/coo-home">
+		  <!--<md-icon md-font-library="material-icons">home</md-icon>-->
+		  <p>COO</p>
+		</md-list-item>
+		<md-list-item ng-href="#/om-home">
+		  <!--<md-icon md-font-library="material-icons">person</md-icon>-->
+		  <p>Manager</p>
+		</md-list-item>
+        <md-list-item ng-href="#/ot-home">
+		 <!-- <md-icon md-font-library="material-icons">person</md-icon>-->
+		  <p>Team Member</p>
+		</md-list-item>
+        <md-list-item ng-href="#/login">
+		 <!-- <md-icon md-font-library="material-icons">power_settings_new</md-icon>-->
+		  <p>Logout</p>
+		</md-list-item>
+	  </md-list>
+	</md-sidenav>
+
+	<md-content>
+
+		<div layout="row" layout-xs="column" layout-sm="column" layout-gt-sm="row" layout-align="space-between none">
+			<div flex layout-padding >
+            <md-grid-list md-cols-xs="2" md-cols-gt-xs="2" md-cols-sm="4" md-cols-gt-sm="4" md-cols-md="8" md-cols-gt-md="8" md-cols-lg="8" md-row-height="1:1" md-gutter="8px">
+
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Raised Today</p>
+									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.raisedTodayCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Solved Today</p>
+									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.solvedTodayCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Escalations</p>
+									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.escalationsCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+					<md-grid-tile>
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="space-around start">
+									<p class="md-body-smallest kpi-label">Open</p>
+									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openTotalCount }}</h2>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S1</p>
+								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS1Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S2</p>
+								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS2Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S3</p>
+								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS3Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+					<md-grid-tile>
+					<div md-whiteframe="3" layout-fill>
+						<md-card layout-fill>
+							<md-card-content layout-fill layout="column" layout-align="space-around start">
+								<p class="md-body-smallest kpi-label">Open S4</p>
+								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS4Count }}</h2>
+							</md-card-content>
+						</md-card>
+					</div>
+					</md-grid-tile>
+
+				</md-grid-list>
+
+				<md-grid-list md-cols-xs="1" md-cols-gt-xs="1" md-cols-sm="2" md-cols-gt-sm="2" md-cols-md="4" md-cols-gt-md="4" md-cols-lg="4" md-row-height="2:2" md-gutter="8px">
+
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="left top">
+									<p class="md-body-smallest kpi-label">Escalations by Priority</p>
+									<div class="chart-container-manager" style="height: -webkit-calc(100% - 100px); width: '100%'">
+									<flot dataset="escalationDataset" options="escalationOptions" layout-padding layout-margin layout-fill style="max-height: 150px;"></flot>
+                                    </div>
+                                    <div class="escalation-Chart legend-container"></div>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+                    <md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+                            <md-card-content layout-fill layout="column" layout-align="left top">
+									<p class="md-body-smallest kpi-label">Escalations by Applications</p>
+                            <!-- Events -->
+
+                                        <div class="chart-container-manager" style="height: -webkit-calc(100% - 100px); width: '100%'">
+										<flot dataset="escalationBYApplicationDataset" options="escalationBYApplicationOptions" layout-padding layout-margin layout-fill style="max-height: 150px;"></flot>
+									</div>
+                                    <div class="escalationBYApp-Chart legend-container"></div>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="2" md-colspan-gt-sm="2">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout-fill layout="column" layout-align="none none">
+									<div layout="row" layout-align="space-between top">
+                                    <span class="md-body-smallest kpi-label">Ticket Volume by Applications</span>
+                                    <md-select class="md-body-smallest" ng-model="omHome.ticketVolumeByApp.id" ng-change="ticketVolumeByAppChange()">
+                                   <md-option ng-value="app.id" ng-repeat="app in omHome.ticketCategoryGroups">{{ app.label }}</md-option>
+                                  </md-select>
+                                  </div>
+
+
+									<div class="chart-container">
+										<flot dataset="ticketVolumeDataset" options="ticketVolumeOptions" layout-fill style="max-height: 150px;"></flot>
+									</div>
+									<div class="ticketVolume-Chart legend-container"></div>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+				</md-grid-list>
+				<md-grid-list md-cols-xs="1" md-cols-gt-xs="1" md-cols-sm="2" md-cols-gt-sm="2" md-cols-md="4" md-cols-gt-md="4" md-cols-lg="4" md-row-height="2:2" md-gutter="8px">
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout="column" layout-align="left top">
+									<p class="md-body-smallest kpi-label">Applications Approaching SLAs</p>
+									<!-- exact table from live demo -->
+                                    <md-table-container>
+
+                                     <table class="md-table zui-table" md-colresize="md-colresize">
+                                        <thead>
+                                          <tr class="md-table-headers-row">
+                                            <th class="md-table-header">App</th>
+                                            <th class="md-table-header">Open</th>
+                                            <th class="md-table-header">Approaching SLAs</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.byApp">
+                                            <td class="md-table-content">{{dt.appName}}</td>
+                                            <td class="md-table-content">{{dt.openCount}}</td>
+                                            <td class="md-table-content">{{dt.approachingSLACount}}</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </md-table-container>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+                    <md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+								<md-card-content layout="column" layout-align="left top">
+									<p class="md-body-smallest kpi-label">Team Approaching SLAs</p>
+									<!-- exact table from live demo -->
+                                    <md-table-container>
+                                     <table class="md-table zui-table" md-colresize="md-colresize">
+                                        <thead>
+                                          <tr class="md-table-headers-row">
+                                            <th class="md-table-header">Person</th>
+                                            <th class="md-table-header">Open</th>
+                                            <th class="md-table-header">Approaching SLAs</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.byPerson">
+                                            <td class="md-table-content">{{dt.personName}}</td>
+                                            <td class="md-table-content">{{dt.openCount}}</td>
+                                            <td class="md-table-content">{{dt.approachingSLACount}}</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </md-table-container>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+
+
+
+
+					<md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+
+
+								<md-card-content layout="column" layout-align="left top">
+									<div layout="row" layout-align="space-between top" class="md-body-smallest kpi-label">
+                                    <span class="md-body-smallest kpi-label">Application SLA Compliance</span>
+                                    <md-select class="md-body-smallest custom-select" ng-model="omHome.selectedApp.id"  ng-change="onSLAComplianceAppChange()">
+                                    <md-option ng-value="app.id" ng-repeat="app in omHome.ticketCategoryGroups">{{ app.label }}</md-option>
+                                  </md-select>
+                                  </div>
+									<!-- exact table from live demo -->
+                                    <md-table-container>
+                                     <table class="md-table zui-table ot-display-table" md-colresize="md-colresize">
+                                        <thead>
+                                          <tr class="md-table-headers-row">
+                                            <th class="md-table-header">App</th>
+                                            <th class="md-table-header">Within SLA</th>
+                                            <th class="md-table-header">Beyond SLA</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.bySLAComplianceApp">
+                                            <td class="md-table-content">{{dt.appName}}</td>
+                                            <td class="md-table-content">{{dt.withinSLACount}}</td>
+                                            <td class="md-table-content">{{dt.beyondSLACount}}</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </md-table-container>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+                    <md-grid-tile md-colspan-xs="1" md-colspan-gt-xs="1" md-colspan-sm="1" md-colspan-gt-sm="1">
+						<div md-whiteframe="3" layout-fill>
+							<md-card layout-fill>
+
+								<md-card-content layout="column" layout-align="left top">
+									<div layout="row" layout-align="space-between top">
+                                    <span class="md-body-smallest kpi-label">Team SLA Compliance</span>
+                                    <md-select class="md-body-smallest custom-select" ng-model="omHome.selectedTeam.id"  ng-change="onSLAComplianceTeamChange()">
+                                    <md-option ng-value="app.id" ng-repeat="app in omHome.ticketCategoryGroups">{{ app.label }}</md-option>
+                                  </md-select>
+                                  </div>
+									<!-- exact table from live demo -->
+                                    <md-table-container>
+                                     <table class="md-table zui-table ot-display-table" md-colresize="md-colresize">
+                                        <thead>
+                                          <tr class="md-table-headers-row">
+                                            <th class="md-table-header">App</th>
+                                            <th class="md-table-header">Within SLA</th>
+                                            <th class="md-table-header">Beyond SLA</th>
+                                          </tr>
+                                        </thead>
+                                        <tbody>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.bySLAComplianceTeam">
+                                            <td class="md-table-content">{{dt.personName}}</td>
+                                            <td class="md-table-content">{{dt.withinSLACount}}</td>
+                                            <td class="md-table-content">{{dt.beyondSLACount}}</td>
+                                          </tr>
+                                        </tbody>
+                                      </table>
+                                    </md-table-container>
+								</md-card-content>
+							</md-card>
+						</div>
+					</md-grid-tile>
+
+
+
+				</md-grid-list>
+			</div>
+		</div>
+
+
+
+	</md-content>
+
+</div>

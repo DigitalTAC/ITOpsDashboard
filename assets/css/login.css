@@ -1,0 +1,55 @@
+@charset "utf-8";
+/* CSS Document */
+
+.stretch input,button  {
+  width: 100%
+}
+.md-button{ margin:0;}
+.md-raised{ 
+	box-shadow: none !important;
+}
+.md-content.md-default-theme,
+ md-content {
+    color: #9E9E9E;
+
+}
+
+md-input-container.md-default-theme .md-input, md-input-container .md-input ,
+label:not(.md-no-float):not(._md-container-ignore),  
+._md-label { 
+	font-size : 1.05rem; 
+	color: #9E9E9E; }
+md-checkbox.md-default-theme ._md-icon,
+md-checkbox ._md-icon {
+    border-color: #9E9E9E;
+}
+
+md-checkbox.md-default-theme.md-checked ._md-icon, 
+md-checkbox.md-checked ._md-icon {
+    background-color: #9E9E9E;
+}
+.my-message{ font-size:12px;}
+md-input-container.md-default-theme > md-icon, 
+md-input-container > md-icon {
+    color: #9E9E9E;
+}
+
+.alert.alert-warning { 
+	color:rgb(221,44,0); 
+	font-size:1rem; 
+	text-align:center;
+}
+md-checkbox ._md-label { margin-left:35px;}
+md-checkbox ._md-container{ left:4px;}
+md-input-container:not(.md-input-invalid).md-input-focused .md-input,
+md-input-container:not(.md-input-invalid).md-input-focused md-icon,
+md-input-container:not(.md-input-invalid).md-input-focused label {
+    border-color:#9E9E9E;color:#9E9E9E;
+} 
+
+.md-button.loginbtn {
+	font-size: 12px;
+	font-size: 1rem !important;
+	color:#fff !important;
+}
+.loginform{ margin-top:4rem;}

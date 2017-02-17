@@ -1,0 +1,155 @@
+@charset "utf-8";
+/* CSS Document */
+.md-table {
+  min-width: 100%;
+  border-collapse: collapse;
+}
+.md-table tbody tr:hover, .md-table tbody tr:focus {
+  cursor:pointer;
+}
+.md-table-header {
+  border-bottom: 1px solid #BDBDBD;
+  color: #9E9E9E;
+  text-align: left;
+  font-size: 0.80rem;
+  font-weight: normal;
+}
+.md-table-content {
+	white-space: nowrap;
+	font-size: 0.80rem;
+}
+.md-table tbody tr { 
+	border-bottom: 1px solid #BDBDBD;
+	cursor: default;
+}
+table.md-table tbody tr:last-child { 
+	border-bottom: none;
+}
+table.md-table tfoot tr:first-child {  
+	border-top:1px solid #BDBDBD;
+}
+md-select {
+    margin: 0;
+}
+.md-table th:nth-child(1),.md-table td:nth-child(1),
+.md-table th:nth-child(2),.md-table td:nth-child(2) {
+  width: 33%;
+   padding: 8px 0 8px 5px;
+   cursor: default;
+}
+.md-table thead  tr{ height:60px;}
+.md-table th:nth-child(1),
+.md-table th:nth-child(2){
+	 padding: 8px 0 8px 5px;
+}
+.md-table th:nth-child(1){
+	 text-align:left;
+}
+.md-table th:nth-child(3),.md-table td:nth-child(3) {
+  width: 34%;
+  padding: 8px 0 8px 5px;
+} 
+
+.md-table th:nth-child(3){
+  padding: 16px 0 0px 5px;
+} 
+.md-table td:nth-child(2),.md-table td:nth-child(3),.md-table td:nth-child(4),.md-table td:nth-child(5) {
+ font-size:1.2rem;
+  text-align:center;
+  cursor: default;
+} 
+.ot-display-table thead tr.md-table-headers-row{ height:55px !important;}
+.md-table.ot-display-table th:nth-child(1),
+.md-table.ot-display-table th:nth-child(2) {
+  width: 33%;
+}
+.md-table.ot-display-table th:nth-child(1){
+   padding: 0px 0 8px 0;
+}
+.md-table.ot-display-table th:nth-child(2){
+   padding: 0px 10px 8px 0;
+}
+.md-table.ot-display-table th:nth-child(3),.md-table.ot-display-table td:nth-child(3) {
+  width: 34%;
+  padding: 8px 0 8px 0;
+} 
+.md-table.ot-display-table th:nth-child(3){
+   padding: 0px 0 8px 0;
+}
+
+.md-table.ot-display-table-1 th:nth-child(2),
+.md-table.ot-display-table-1 td:nth-child(2), 
+.md-table.ot-display-table-1 th:nth-child(3),
+.md-table.ot-display-table-1 td:nth-child(3), 
+.md-table.ot-display-table-1 th:nth-child(4),
+.md-table.ot-display-table-1 td:nth-child(4),
+.md-table.ot-display-table-1 th:nth-child(5),
+.md-table.ot-display-table-1 td:nth-child(5) {
+  width: 15%;
+  padding: 8px 0 8px 0;
+}
+
+.md-table.ot-display-table-1 th:nth-child(1),.md-table.ot-display-table-1 td:nth-child(1) {
+  width: 40%;
+  padding: 8px 0 8px 0;
+} 
+.zui-table{
+margin-top:0;
+}
+.zui-table thead th {
+    color: #333;
+    text-align: center;
+	font-size:0.8rem;
+}
+.zui-table tbody td {
+    color: #333;
+}
+
+/*.zui-table tbody tr:nth-child(odd) {
+    background-color: #fff;
+}
+.zui-table tbody tr:nth-child(even) {
+    background-color: #90CAF9;
+}*/
+.zui-table-horizontal tbody td {
+    border-left: none;
+    border-right: none;
+}
+@media only screen and  (max-width: 600px) {
+	.md-table th:nth-child(1),.md-table td:nth-child(1),
+	.md-table th:nth-child(2),.md-table td:nth-child(2),
+	.md-table th:nth-child(3),.md-table td:nth-child(3){
+	  padding: 12px 0 12px 0;
+	} 
+	
+	.md-table.ot-display-table th:nth-child(2){
+	   padding: 12px 10px 12px 0;
+	}
+	.md-table.ot-display-table th:nth-child(1),
+	.md-table.ot-display-table td:nth-child(1)
+	.md-table.ot-display-table th:nth-child(3),
+	.md-table.ot-display-table td:nth-child(3) {
+	  padding: 12px 0 12px 0;
+	} 
+	
+	.md-table.ot-display-table-1 th:nth-child(2),
+	.md-table.ot-display-table-1 td:nth-child(2), 
+	.md-table.ot-display-table-1 th:nth-child(3),
+	.md-table.ot-display-table-1 td:nth-child(3), 
+	.md-table.ot-display-table-1 th:nth-child(4),
+	.md-table.ot-display-table-1 td:nth-child(4),
+	.md-table.ot-display-table-1 th:nth-child(5),
+	.md-table.ot-display-table-1 td:nth-child(5),
+	.md-table.ot-display-table-1 th:nth-child(1),
+	.md-table.ot-display-table-1 td:nth-child(1) {
+	  padding: 12px 0 12px 0;
+	} 
+}
+@media only screen and  (min-width: 799px) and  (max-width: 950px) {
+
+.md-table th:nth-child(3){
+  padding: 0px 0 0px 5px;
+} 
+}
+.custom-select ._md-select-value{ min-width:50px;}
+.custom-select ._md-select-value ._md-select-icon{ width:12px;}

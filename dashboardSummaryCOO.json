@@ -1,0 +1,1083 @@
+[{
+ 	"raisedTodayCount": 40,
+ 	"solvedTodayCount": 25,
+ 	"escalationsCount": 15,
+ 	"openCount": {
+ 		"openTotalCount": 169,
+ 		"openS1Count": 5,
+ 		"openS2Count": 8,
+ 		"openS3Count": 55,
+ 		"openS4Count": 101
+ 	},
+ 	"ticketTrendThisYear": {
+ 		"dailyData": [
+		{
+ 			"timeInstance": 1483245000,
+			"totalRaisedCount": 16,
+			"totalResolvedCount": 6,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount":1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 1
+ 			},
+ 			"s3": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 1
+ 			},
+ 			"s4": {
+ 				"raisedCount": 10,
+ 				"resolvedCount": 3
+ 			}
+ 		},
+		{
+ 			"timeInstance": 1483331400,
+			"totalRaisedCount": 15,
+			"totalResolvedCount": 7,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 0
+ 			},
+ 			"s3": {
+ 				"raisedCount": 4,
+ 				"resolvedCount": 2
+ 			},
+ 			"s4": {
+ 				"raisedCount": 8,
+ 				"resolvedCount": 5
+ 			}
+ 		},
+          {
+ 			"timeInstance": 1483417800,
+			"totalRaisedCount": 15,
+			"totalResolvedCount": 13,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 4,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 3
+ 			},
+ 			"s4": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 8
+ 			}
+ 		},
+{
+ 			"timeInstance": 1483504200,
+			"totalRaisedCount": 18,
+			"totalResolvedCount": 19,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 6,
+ 				"resolvedCount": 4
+ 			},
+ 			"s4": {
+ 				"raisedCount": 11,
+ 				"resolvedCount": 10
+ 			}
+ 		},
+{
+ 			"timeInstance": 1483590600,
+			"totalRaisedCount": 33,
+			"totalResolvedCount": 32,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 4,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 9,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 20,
+ 				"resolvedCount": 20
+ 			}
+ 		},
+{
+ 			"timeInstance": 1483677000,
+			"totalRaisedCount": 45,
+			"totalResolvedCount": 34,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 1
+ 			},
+ 			"s3": {
+ 				"raisedCount": 14,
+ 				"resolvedCount": 14
+ 			},
+ 			"s4": {
+ 				"raisedCount": 25,
+ 				"resolvedCount": 18
+ 			}
+ 		},
+{
+ 			"timeInstance": 1483763400,
+			"totalRaisedCount": 28,
+			"totalResolvedCount": 34,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 3
+ 			},
+ 			"s3": {
+ 				"raisedCount": 10,
+ 				"resolvedCount": 6
+ 			},
+ 			"s4": {
+ 				"raisedCount": 15,
+ 				"resolvedCount": 25
+ 			}
+ 		},
+{
+ 			"timeInstance": 1483849800,
+			"totalRaisedCount": 37,
+			"totalResolvedCount": 31,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 1
+ 			},
+ 			"s3": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 8
+ 			},
+ 			"s4": {
+ 				"raisedCount": 23,
+ 				"resolvedCount": 22
+ 			}
+ 		},
+{
+ 			"timeInstance": 1483936200,
+			"totalRaisedCount": 32,
+			"totalResolvedCount": 31,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s3": {
+ 				"raisedCount": 13,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 19,
+ 				"resolvedCount": 21
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484022600,
+			"totalRaisedCount": 28,
+			"totalResolvedCount": 28,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 16,
+ 				"resolvedCount": 11
+ 			},
+ 			"s4": {
+ 				"raisedCount": 10,
+ 				"resolvedCount": 13
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484109000,
+			"totalRaisedCount": 46,
+			"totalResolvedCount": 40,
+ 			"s1": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 3
+ 			},
+ 			"s3": {
+ 				"raisedCount": 22,
+ 				"resolvedCount": 14
+ 			},
+ 			"s4": {
+ 				"raisedCount": 22,
+ 				"resolvedCount": 22
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484195400,
+			"totalRaisedCount": 51,
+			"totalResolvedCount": 30,
+ 			"s1": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 2
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 1
+ 			},
+ 			"s3": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 12
+ 			},
+ 			"s4": {
+ 				"raisedCount": 33,
+ 				"resolvedCount": 15
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484281800,
+			"totalRaisedCount": 24,
+			"totalResolvedCount": 32,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 2
+ 			},
+ 			"s2": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 8,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 11,
+ 				"resolvedCount": 18
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484368200,
+			"totalRaisedCount": 41,
+			"totalResolvedCount": 26,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 6,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 11
+ 			},
+ 			"s4": {
+ 				"raisedCount": 30,
+ 				"resolvedCount": 12
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484454600,
+			"totalRaisedCount": 22,
+			"totalResolvedCount": 21,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 7,
+ 				"resolvedCount": 7
+ 			},
+ 			"s4": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 10
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484541000,
+			"totalRaisedCount": 27,
+			"totalResolvedCount": 26,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 7,
+ 				"resolvedCount": 9
+ 			},
+ 			"s3": {
+ 				"raisedCount": 9,
+ 				"resolvedCount": 8
+ 			},
+ 			"s4": {
+ 				"raisedCount": 11,
+ 				"resolvedCount": 9
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484627400,
+			"totalRaisedCount": 17,
+			"totalResolvedCount": 34,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 0
+ 			},
+ 			"s3": {
+ 				"raisedCount": 4,
+ 				"resolvedCount": 19
+ 			},
+ 			"s4": {
+ 				"raisedCount": 10,
+ 				"resolvedCount": 15
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484713800,
+			"totalRaisedCount": 15,
+			"totalResolvedCount": 6,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s3": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 4
+ 			},
+ 			"s4": {
+ 				"raisedCount": 11,
+ 				"resolvedCount": 1
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484800200,
+			"totalRaisedCount": 24,
+			"totalResolvedCount": 28,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 2
+ 			},
+ 			"s2": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 5
+ 			},
+ 			"s3": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 16,
+ 				"resolvedCount": 11
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484886600,
+			"totalRaisedCount": 28,
+			"totalResolvedCount": 24,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 8,
+ 				"resolvedCount": 2
+ 			},
+ 			"s4": {
+ 				"raisedCount": 17,
+ 				"resolvedCount": 18
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484973000,
+			"totalRaisedCount": 31,
+			"totalResolvedCount": 24,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 3
+ 			},
+ 			"s3": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 0
+ 			},
+ 			"s4": {
+ 				"raisedCount": 25,
+ 				"resolvedCount": 21
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485059400,
+			"totalRaisedCount": 40,
+			"totalResolvedCount": 38,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 9,
+ 				"resolvedCount": 12
+ 			},
+ 			"s4": {
+ 				"raisedCount": 29,
+ 				"resolvedCount": 22
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485145800,
+			"totalRaisedCount": 51,
+			"totalResolvedCount": 42,
+ 			"s1": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 3
+ 			},
+ 			"s3": {
+ 				"raisedCount": 16,
+ 				"resolvedCount": 16
+ 			},
+ 			"s4": {
+ 				"raisedCount": 30,
+ 				"resolvedCount": 23
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485232200,
+			"totalRaisedCount": 55,
+			"totalResolvedCount": 36,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 2
+ 			},
+ 			"s2": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 0
+ 			},
+ 			"s3": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 12
+ 			},
+ 			"s4": {
+ 				"raisedCount": 41,
+ 				"resolvedCount": 22
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485318600,
+			"totalRaisedCount": 39,
+			"totalResolvedCount": 53,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 2
+ 			},
+ 			"s2": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 16,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 22,
+ 				"resolvedCount": 39
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485405000,
+			"totalRaisedCount": 42,
+			"totalResolvedCount": 59,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 18,
+ 				"resolvedCount": 23
+ 			},
+ 			"s4": {
+ 				"raisedCount": 21,
+ 				"resolvedCount": 34
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485491400,
+			"totalRaisedCount": 54,
+			"totalResolvedCount": 33,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 4,
+ 				"resolvedCount": 5
+ 			},
+ 			"s3": {
+ 				"raisedCount": 22,
+ 				"resolvedCount": 12
+ 			},
+ 			"s4": {
+ 				"raisedCount": 27,
+ 				"resolvedCount": 15
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485577800,
+			"totalRaisedCount": 41,
+			"totalResolvedCount": 42,
+ 			"s1": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 5,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 15
+ 			},
+ 			"s4": {
+ 				"raisedCount": 21,
+ 				"resolvedCount": 22
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485664200,
+			"totalRaisedCount": 39,
+			"totalResolvedCount": 53,
+ 			"s1": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 8,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 15,
+ 				"resolvedCount": 12
+ 			},
+ 			"s4": {
+ 				"raisedCount": 14,
+ 				"resolvedCount": 36
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485750600,
+			"totalRaisedCount": 42,
+			"totalResolvedCount": 29,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 6,
+ 				"resolvedCount": 5
+ 			},
+ 			"s3": {
+ 				"raisedCount": 18,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 17,
+ 				"resolvedCount": 13
+ 			}
+ 		},
+{
+ 			"timeInstance": 1485837000,
+			"totalRaisedCount": 39,
+			"totalResolvedCount": 32,
+ 			"s1": {
+ 				"raisedCount": 0,
+ 				"resolvedCount": 0
+ 			},
+ 			"s2": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 6
+ 			},
+ 			"s3": {
+ 				"raisedCount": 23,
+ 				"resolvedCount": 14
+ 			},
+ 			"s4": {
+ 				"raisedCount": 14,
+ 				"resolvedCount": 12
+ 			}
+ 		},
+		{
+ 			"timeInstance": 1485923400,
+			"totalRaisedCount": 28,
+			"totalResolvedCount": 23,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 2
+ 			},
+ 			"s3": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 12,
+ 				"resolvedCount": 10
+ 			}
+ 		},
+		{
+ 			"timeInstance": 1486009800,
+			"totalRaisedCount": 72,
+			"totalResolvedCount": 29,
+ 			"s1": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 3
+ 			},
+ 			"s3": {
+ 				"raisedCount": 23,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 45,
+ 				"resolvedCount": 15
+ 			}
+ 		},
+		{
+ 			"timeInstance": 1486096200,
+			"totalRaisedCount": 40,
+			"totalResolvedCount": 26,
+ 			"s1": {
+ 				"raisedCount": 2,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s3": {
+ 				"raisedCount": 14,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 23,
+ 				"resolvedCount": 14
+ 			}
+ 		},
+		{
+ 			"timeInstance": 1486182600,
+			"totalRaisedCount": 40,
+			"totalResolvedCount": 25,
+ 			"s1": {
+ 				"raisedCount": 1,
+ 				"resolvedCount": 1
+ 			},
+ 			"s2": {
+ 				"raisedCount": 4,
+ 				"resolvedCount": 4
+ 			},
+ 			"s3": {
+ 				"raisedCount": 10,
+ 				"resolvedCount": 10
+ 			},
+ 			"s4": {
+ 				"raisedCount": 25,
+ 				"resolvedCount": 10
+ 			}
+ 		}
+           ],
+ 		"weeklyData": [{
+ 			"timeInstance": 1483763400,
+			"totalRaisedCount": 170,
+			"totalResolvedCount": 145,
+ 			"s1": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 3
+ 			},
+ 			"s2": {
+ 				"raisedCount": 22,
+ 				"resolvedCount": 13
+ 			},
+ 			"s3": {
+ 				"raisedCount": 51,
+ 				"resolvedCount": 40
+ 			},
+ 			"s4": {
+ 				"raisedCount": 94,
+ 				"resolvedCount": 89
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484368200,
+			"totalRaisedCount": 259,
+			"totalResolvedCount": 218,
+ 			"s1": {
+ 				"raisedCount": 6,
+ 				"resolvedCount": 6
+ 			},
+ 			"s2": {
+ 				"raisedCount": 17,
+ 				"resolvedCount": 13
+ 			},
+ 			"s3": {
+ 				"raisedCount": 88,
+ 				"resolvedCount": 76
+ 			},
+ 			"s4": {
+ 				"raisedCount": 148,
+ 				"resolvedCount": 123
+ 			}
+ 		},
+{
+ 			"timeInstance": 1484973000,
+			"totalRaisedCount": 164,
+			"totalResolvedCount": 163,
+ 			"s1": {
+ 				"raisedCount": 3,
+ 				"resolvedCount": 3
+ 			},
+ 			"s2": {
+ 				"raisedCount": 21,
+ 				"resolvedCount": 25
+ 			},
+ 			"s3": {
+ 				"raisedCount": 38,
+ 				"resolvedCount": 50
+ 			},
+ 			"s4": {
+ 				"raisedCount": 102,
+ 				"resolvedCount": 85
+ 			}
+ 		},
+           {
+ 			"timeInstance": 1485577800,
+			"totalRaisedCount": 322,
+			"totalResolvedCount": 303,
+ 			"s1": {
+ 				"raisedCount": 8,
+ 				"resolvedCount": 6
+ 			},
+ 			"s2": {
+ 				"raisedCount": 18,
+ 				"resolvedCount": 20
+ 			},
+ 			"s3": {
+ 				"raisedCount": 105,
+ 				"resolvedCount": 100
+ 			},
+ 			"s4": {
+ 				"raisedCount": 191,
+ 				"resolvedCount": 177
+ 			}
+ 	      },
+           {
+ 			"timeInstance": 1486182600,
+			"totalRaisedCount": 300,
+			"totalResolvedCount": 217,
+ 			"s1": {
+ 				"raisedCount": 9,
+ 				"resolvedCount": 6
+ 			},
+ 			"s2": {
+ 				"raisedCount": 26,
+ 				"resolvedCount": 25
+ 			},
+ 			"s3": {
+ 				"raisedCount": 115,
+ 				"resolvedCount": 76
+ 			},
+ 			"s4": {
+ 				"raisedCount": 150,
+ 				"resolvedCount": 110
+ 			}
+ 		}],
+ 		"monthlyData": [
+			{
+ 				"timeInstance": 1485837000,
+				"totalRaisedCount": 1035,
+				"totalResolvedCount": 943,
+ 				"s1": {
+ 					"raisedCount": 23,
+ 					"resolvedCount": 20
+ 				},
+ 				"s2": {
+ 					"raisedCount": 94,
+ 					"resolvedCount": 86
+ 				},
+ 				"s3": {
+ 					"raisedCount": 338,
+ 					"resolvedCount": 302
+ 				},
+ 				"s4": {
+ 					"raisedCount": 580,
+ 					"resolvedCount": 535
+ 				}
+ 			},
+{
+ 				"timeInstance": 1486182600,
+				"totalRaisedCount": 180,
+				"totalResolvedCount": 103,
+ 				"s1": {
+ 					"raisedCount": 6,
+ 					"resolvedCount": 4
+ 				},
+ 				"s2": {
+ 					"raisedCount": 10,
+ 					"resolvedCount": 10
+ 				},
+ 				"s3": {
+ 					"raisedCount": 59,
+ 					"resolvedCount": 40
+ 				},
+ 				"s4": {
+ 					"raisedCount": 105,
+ 					"resolvedCount": 49
+ 				}
+ 			}],
+
+ 		"quarterlyData": [{
+ 			"timeInstance": 1486182600,
+			"totalRaisedCount": 1215,
+			"totalResolvedCount": 1046,
+ 			"s1": {
+ 				"raisedCount": 29,
+ 				"resolvedCount": 24
+ 			},
+ 			"s2": {
+ 				"raisedCount": 104,
+ 				"resolvedCount": 96
+ 			},
+ 			"s3": {
+ 				"raisedCount": 397,
+ 				"resolvedCount": 342
+ 			},
+ 			"s4": {
+ 				"raisedCount": 685,
+ 				"resolvedCount": 584
+ 			}
+ 		}]
+},
+ 	"ticketCategoriesThisYear": {
+ 		"WTDData": [{
+ 			"ticketcategory": "CPU",
+ 			"ticketCount": 60
+ 		},
+{
+ 			"ticketcategory": "Mem",
+ 			"ticketCount": 45
+ 		},
+{
+ 			"ticketcategory": "Nwk",
+ 			"ticketCount": 40
+ 		},
+{
+ 			"ticketcategory": "API",
+ 			"ticketCount": 49
+ 		},
+{
+ 			"ticketcategory": "Unix",
+ 			"ticketCount": 16
+ 		},
+{
+ 			"ticketcategory": "URL",
+ 			"ticketCount": 25
+ 		},
+{
+ 			"ticketcategory": "Win",
+ 			"ticketCount": 20
+ 		},
+{
+ 			"ticketcategory": "Mob",
+ 			"ticketCount": 21
+ 		},
+{
+ 			"ticketcategory": "DDS",
+ 			"ticketCount": 6
+ 		},
+{
+ 			"ticketcategory": "Port",
+ 			"ticketCount": 18
+ 		}],
+ 		"MTDData": [{
+ 			"ticketcategory": "CPU",
+ 			"ticketCount": 39
+ 		},
+{
+ 			"ticketcategory": "Mem",
+ 			"ticketCount": 20
+ 		},
+{
+ 			"ticketcategory": "Nwk",
+ 			"ticketCount": 15
+ 		},
+{
+ 			"ticketcategory": "API",
+ 			"ticketCount": 44
+ 		},
+{
+ 			"ticketcategory": "Unix",
+ 			"ticketCount": 10
+ 		},
+{
+ 			"ticketcategory": "URL",
+ 			"ticketCount": 21
+ 		},
+{
+ 			"ticketcategory": "Mob",
+ 			"ticketCount": 14
+ 		},
+{
+ 			"ticketcategory": "Win",
+ 			"ticketCount": 9
+ 		},
+{
+ 			"ticketcategory": "DDS",
+ 			"ticketCount": 3
+ 		},
+{
+ 			"ticketcategory": "Port",
+ 			"ticketCount": 5
+ 		}],
+ 		"QTDData": [{
+ 			"ticketcategory": "CPU",
+ 			"ticketCount": 192
+ 		},
+{
+ 			"ticketcategory": "Mem",
+ 			"ticketCount": 146
+ 		},
+{
+ 			"ticketcategory": "Nwk",
+ 			"ticketCount": 114
+ 		},
+{
+ 			"ticketcategory": "API",
+ 			"ticketCount": 143
+ 		},
+{
+ 			"ticketcategory": "Unix",
+ 			"ticketCount": 110
+ 		},
+{
+ 			"ticketcategory": "URL",
+ 			"ticketCount": 103
+ 		},
+{
+ 			"ticketcategory": "Win",
+ 			"ticketCount": 118
+ 		},
+{
+ 			"ticketcategory": "Mob",
+ 			"ticketCount": 115
+ 		},
+{
+ 			"ticketcategory": "DDS",
+ 			"ticketCount": 96
+ 		},
+{
+ 			"ticketcategory": "Port",
+ 			"ticketCount": 78
+ 		}],
+ 		"YTDData": [{
+ 			"ticketcategory": "CPU",
+ 			"ticketCount": 192
+ 		},
+{
+ 			"ticketcategory": "Mem",
+ 			"ticketCount": 146
+ 		},
+{
+ 			"ticketcategory": "Nwk",
+ 			"ticketCount": 114
+ 		},
+{
+ 			"ticketcategory": "API",
+ 			"ticketCount": 143
+ 		},
+{
+ 			"ticketcategory": "Unix",
+ 			"ticketCount": 110
+ 		},
+{
+ 			"ticketcategory": "URL",
+ 			"ticketCount": 103
+ 		},
+{
+ 			"ticketcategory": "Win",
+ 			"ticketCount": 118
+ 		},
+{
+ 			"ticketcategory": "Mob",
+ 			"ticketCount": 115
+ 		},
+{
+ 			"ticketcategory": "Dds",
+ 			"ticketCount": 96
+ 		},
+{
+ 			"ticketcategory": "Port",
+ 			"ticketCount": 78
+ 		}]
+ 	}
+ }]
