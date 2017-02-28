@@ -1,0 +1,106 @@
+body {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	text-shadow: 1px 1px 1px rgba(0,0,0,0.004);
+	text-rendering: optimizeLegibility !important;
+}
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
+.link-client {
+	display: inline-flex;
+}
+.kpi-value,
+.kpi-label {
+	margin: 0;
+}
+.logo {
+	height: 2.5rem;
+}
+.page-heading {
+    margin: auto;
+    display: flex;
+    text-align: center;
+	color: transparent;
+}
+.page-heading:before {
+    position: absolute;
+    width: 100%;
+    /*content: "Dashboard";*/
+	content: attr(data-content);
+    left: 0;
+    color: #fff;
+}
+.user-role,
+.hamburger-button,
+.hamburger-button md-icon {
+	color: #fff !important;
+}
+.chart-container {
+	width: 100%;
+	height: calc(100% - 50px);
+}
+
+.chart-container-manager {
+	width: 100%;
+	height: calc(100% - 100px);
+}
+
+.legend-container {
+    align-self: center;
+    margin-top: auto;
+}
+md-select.md-default-theme ._md-select-value, md-select ._md-select-value ,
+md-select:not([disabled]):focus ._md-select-value {
+	border: none;
+}
+._md-select-value ._md-select-icon {
+    transform: translate3d(0,-5px,0);
+}
+._md-select-value {
+	padding: 0;
+}
+._md-select-value > span:not(._md-select-icon) {
+	height: 26px;
+}
+.time-reference {
+    margin: 0 0.5rem 0 auto;
+}
+md-toolbar.timestamp-container {
+    min-height: 1rem;
+    height: auto;
+    background-color: transparent;
+}
+.timestamp-container .md-toolbar-tools {
+	height: auto;
+}
+.timestamp-container .md-toolbar-tools p {
+    font-size: 0.6rem;
+    margin: 0;
+    margin-top: 6px;
+    margin-bottom: 2px;
+}
+md-content > div > div.layout-padding {
+	padding-top: 0;
+}
+@media only screen and (max-width: 599px) {
+	md-card md-card-content {
+		padding: 6px;
+	}
+	.chart-container {
+		width: 100%;
+		height: calc(100% - 45px);
+	}
+	md-select {
+		margin: 0;
+	}
+}
+@media only screen and (width: 360px) {
+	.chart-container {
+		width: 100%;
+		height: calc(100% - 45px);
+	}
+}
+@media only screen and (min-width: 600px) {
+
+}

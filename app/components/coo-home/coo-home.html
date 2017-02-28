@@ -1,15 +1,16 @@
 <div layout="column" layout-fill>
 	<md-toolbar>
 		<!--<div class="md-toolbar-tools" layout="row" layout-align="space-between center">-->
-		<div class="md-toolbar-tools" layout="row" layout-align="center center">
+		<!--<div class="md-toolbar-tools" layout="row" layout-align="center center">-->
+		<div class="md-toolbar-tools" layout="row" layout-align="start center">
 
 			<a class="link-client" href="#">
 				<img class="logo" src="assets/img/ibm-white.png" alt="IBM logo">
 			</a>
 
-			<p class="md-body-1 page-heading md-accent" data-content="{{ cooHome.title }}">{{ cooHome.title }}</p>
+			<p class="md-body-1 page-heading md-accent" data-content="{{ cooHome.title }}" ng-bind="cooHome.title" ></p>
 
-			<div class="user-role md-body-smallest" >{{ cooHome.userRole }}</div>
+			<div class="user-role md-body-smallest" ng-bind="cooHome.userRole" ></div>
 
 			<md-button class="md-icon-button hamburger-button" aria-label="Menu" ng-click="cooHome.toggleRight()">
 				<md-icon>menu</md-icon>
@@ -23,7 +24,7 @@
     <div class="md-toolbar-tools"><p>Updated on <span class="timestamp">16-Feb-2016 00:15:30</span></p></div>
 	</md-toolbar>
 
-	<md-sidenav class="md-sidenav-right" md-component-id="right">
+	<md-sidenav class="md-sidenav-right" md-component-id="right" md-whiteframe="4">
 	  <md-toolbar>
 		<!--<h1 class="md-toolbar-tools">{{ cooHome.title }}</h1>-->
 	  </md-toolbar>
@@ -58,7 +59,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Raised Today</p>
-									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.raisedTodayCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.raisedTodayCount"></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -68,7 +69,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Solved Today</p>
-									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.solvedTodayCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.solvedTodayCount"></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -78,7 +79,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Escalations</p>
-									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.escalationsCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.escalationsCount"></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -88,7 +89,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Open</p>
-									<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openTotalCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.openCount.openTotalCount"></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -99,7 +100,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S1</p>
-								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS1Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.openCount.openS1Count"></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -109,7 +110,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S2</p>
-								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS2Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.openCount.openS2Count"></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -119,7 +120,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S3</p>
-								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS3Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.openCount.openS3Count"></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -129,7 +130,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S4</p>
-								<h2 class="md-display-2 kpi-value">{{ cooHome.dashboardSummary.openCount.openS4Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind="cooHome.dashboardSummary.openCount.openS4Count"></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -147,14 +148,14 @@
 									<div layout="row" layout-align="space-between top">
 										<p class="md-body-smallest kpi-label">Ticket Trend</p>
 
-										<p class="md-body-smallest time-reference">{{ cooHome.timerefTrend }}</p>
+										<p class="md-body-smallest time-reference" ng-bind="cooHome.timerefTrend"></p>
 
-										<md-select class="md-body-smallest" ng-model="cooHome.selectedTrendGroup.id" ng-change="onTrendGroupChange()">
-											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups">{{ group.label }}</md-option>
+										<md-select class="md-body-smallest" ng-model="cooHome.selectedTrendGroup.id" ng-change="cooHome.onTrendGroupChange()" >
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups" ng-bind="group.label"></md-option>
 										</md-select>
 									</div>
 									<div class="chart-container">
-										<flot dataset="trendDataset" options="trendOptions" layout-fill style="max-height: 150px;"></flot>
+										<flot dataset="cooHome.trendDataset" options="cooHome.trendOptions" layout-fill style="max-height: 150px;"></flot>
 									</div>
 									<div class="trend-Chart legend-container"></div>
 								</md-card-content>
@@ -171,12 +172,12 @@
 
 										<p class="md-body-smallest time-reference">2017</p>
 
-										<md-select class="md-body-smallest" ng-model="cooHome.selectedS1S2TrendGroup.id" ng-change="onS1S2TrendGroupChange()">
-											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups">{{ group.label }}</md-option>
+										<md-select class="md-body-smallest" ng-model="cooHome.selectedS1S2TrendGroup.id" ng-change="cooHome.onS1S2TrendGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups" ng-bind="group.label"></md-option>
 										</md-select>
 									</div>
 									<div class="chart-container">
-										<flot dataset="s1S2TrendDataset" options="s1S2TrendOptions" layout-fill style="max-height: 150px;"></flot>
+										<flot dataset="cooHome.s1S2TrendDataset" options="cooHome.s1S2TrendOptions" layout-fill style="max-height: 150px;"></flot>
 									</div>
 									<div class="s1s2-trend-Chart legend-container"></div>
 								</md-card-content>
@@ -194,12 +195,12 @@
 
 										<p class="md-body-smallest time-reference">2017</p>
 
-										<md-select class="md-body-smallest" ng-model="cooHome.selectedS3S4TrendGroup.id" ng-change="onS3S4TrendGroupChange()">
-											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups">{{ group.label }}</md-option>
+										<md-select class="md-body-smallest" ng-model="cooHome.selectedS3S4TrendGroup.id" ng-change="cooHome.onS3S4TrendGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketTrendGroups" ng-bind="group.label"></md-option>
 										</md-select>
 									</div>
 									<div class="chart-container">
-										<flot dataset="s3S4TrendDataset" options="s3S4TrendOptions" layout-fill style="max-height: 150px;"></flot>
+										<flot dataset="cooHome.s3S4TrendDataset" options="cooHome.s3S4TrendOptions" layout-fill style="max-height: 150px;"></flot>
 									</div>
 									<div class="s3s4-trend-Chart legend-container"></div>
 								</md-card-content>
@@ -218,14 +219,14 @@
 
 										<p class="md-body-smallest time-reference">2017</p>
 
-										<md-select ng-model="cooHome.selectedCategoryGroup.id" ng-change="onCategoryGroupChange()">
-											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketCategoryGroups">{{ group.label }}</md-option>
+										<md-select ng-model="cooHome.selectedCategoryGroup.id" ng-change="cooHome.onCategoryGroupChange()">
+											<md-option ng-value="group.id" ng-repeat="group in cooHome.ticketCategoryGroups" ng-bind="group.label"></md-option>
 										</md-select>
 									</div>
 
 
 									<div class="chart-container">
-										<flot dataset="categoriesDataset" options="categoriesOptions" layout-fill style="max-height: 150px;"></flot>
+										<flot dataset="cooHome.categoriesDataset" options="cooHome.categoriesOptions" layout-fill style="max-height: 150px;"></flot>
 									</div>
 									<div class="category-Chart legend-container"></div>
 								</md-card-content>

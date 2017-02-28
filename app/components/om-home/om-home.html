@@ -1,12 +1,12 @@
 <div layout="column" layout-fill>
 	<md-toolbar>
-		<div class="md-toolbar-tools" layout="row" layout-align="center center">
+		<div class="md-toolbar-tools" layout="row" layout-align="start center">
 
 			<a href="#"><img class="logo" src="assets/img/ibm-white.png" alt="IBM logo"> </a>
 
-			<p class="md-body-1 page-heading" data-content="{{ omHome.title }}">{{ omHome.title }}</p>
+			<p class="md-body-1 page-heading" data-content="{{ omHome.title }}" ng-bind="omHome.title"></p>
 
-			<div class="user-role md-body-smallest" >{{ omHome.userRole }}</div>
+			<div class="user-role md-body-smallest" ng-bind="omHome.userRole"></div>
 
 			<md-button class="md-icon-button hamburger-button" aria-label="Menu" ng-click="omHome.toggleRight()">
 				<md-icon>menu</md-icon>
@@ -52,7 +52,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Raised Today</p>
-									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.raisedTodayCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.raisedTodayCount></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -62,7 +62,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Solved Today</p>
-									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.solvedTodayCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.solvedTodayCount ></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -72,7 +72,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Escalations</p>
-									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.escalationsCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.escalationsCount ></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -82,7 +82,7 @@
 							<md-card layout-fill>
 								<md-card-content layout-fill layout="column" layout-align="space-around start">
 									<p class="md-body-smallest kpi-label">Open</p>
-									<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openTotalCount }}</h2>
+									<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.openCount.openTotalCount ></h2>
 								</md-card-content>
 							</md-card>
 						</div>
@@ -93,7 +93,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S1</p>
-								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS1Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.openCount.openS1Count></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -103,7 +103,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S2</p>
-								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS2Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.openCount.openS2Count></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -113,7 +113,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S3</p>
-								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS3Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.openCount.openS3Count></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -123,7 +123,7 @@
 						<md-card layout-fill>
 							<md-card-content layout-fill layout="column" layout-align="space-around start">
 								<p class="md-body-smallest kpi-label">Open S4</p>
-								<h2 class="md-display-2 kpi-value">{{ omHome.dashboardSummary.openCount.openS4Count }}</h2>
+								<h2 class="md-display-2 kpi-value" ng-bind=omHome.dashboardSummary.openCount.openS4Count></h2>
 							</md-card-content>
 						</md-card>
 					</div>
@@ -140,7 +140,7 @@
 								<md-card-content layout-fill layout="column" layout-align="left top">
 									<p class="md-body-smallest kpi-label">Escalations by Priority</p>
 									<div class="chart-container-manager" style="height: -webkit-calc(100% - 100px); width: '100%'">
-									<flot dataset="escalationDataset" options="escalationOptions" layout-padding layout-margin layout-fill style="max-height: 150px;"></flot>
+									<flot dataset="omHome.escalationDataset" options="omHome.escalationOptions" layout-padding layout-margin layout-fill style="max-height: 150px;"></flot>
                                     </div>
                                     <div class="escalation-Chart legend-container"></div>
 								</md-card-content>
@@ -155,7 +155,7 @@
                             <!-- Events -->
 
                                         <div class="chart-container-manager" style="height: -webkit-calc(100% - 100px); width: '100%'">
-										<flot dataset="escalationBYApplicationDataset" options="escalationBYApplicationOptions" layout-padding layout-margin layout-fill style="max-height: 150px;"></flot>
+										<flot dataset="omHome.escalationBYApplicationDataset" options="omHome.escalationBYApplicationOptions" layout-padding layout-margin layout-fill style="max-height: 150px;"></flot>
 									</div>
                                     <div class="escalationBYApp-Chart legend-container"></div>
 								</md-card-content>
@@ -171,14 +171,14 @@
 								<md-card-content layout-fill layout="column" layout-align="none none">
 									<div layout="row" layout-align="space-between top">
                                     <span class="md-body-smallest kpi-label">Ticket Volume by Applications</span>
-                                    <md-select class="md-body-smallest" ng-model="omHome.ticketVolumeByApp.id" ng-change="ticketVolumeByAppChange()">
+                                    <md-select class="md-body-smallest" ng-model="omHome.ticketVolumeByApp.id" ng-change="omHome.ticketVolumeByAppChange()">
                                    <md-option ng-value="app.id" ng-repeat="app in omHome.ticketCategoryGroups">{{ app.label }}</md-option>
                                   </md-select>
                                   </div>
 
 
 									<div class="chart-container">
-										<flot dataset="ticketVolumeDataset" options="ticketVolumeOptions" layout-fill style="max-height: 150px;"></flot>
+										<flot dataset="omHome.ticketVolumeDataset" options="omHome.ticketVolumeOptions" layout-fill style="max-height: 150px;"></flot>
 									</div>
 									<div class="ticketVolume-Chart legend-container"></div>
 								</md-card-content>
@@ -206,10 +206,10 @@
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.byApp">
-                                            <td class="md-table-content">{{dt.appName}}</td>
-                                            <td class="md-table-content">{{dt.openCount}}</td>
-                                            <td class="md-table-content">{{dt.approachingSLACount}}</td>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.byApp | orderBy:'appName'">
+                                            <td class="md-table-content" ng-bind=dt.appName></td>
+                                            <td class="md-table-content" ng-bind=dt.openCount></td>
+                                            <td class="md-table-content" ng-bind=dt.approachingSLACount></td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -234,10 +234,10 @@
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.byPerson">
-                                            <td class="md-table-content">{{dt.personName}}</td>
-                                            <td class="md-table-content">{{dt.openCount}}</td>
-                                            <td class="md-table-content">{{dt.approachingSLACount}}</td>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.byPerson | orderBy:'personName' ">
+                                            <td class="md-table-content" ng-bind=dt.personName></td>
+                                            <td class="md-table-content" ng-bind=dt.openCount></td>
+                                            <td class="md-table-content" ng-bind=dt.approachingSLACount></td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -259,7 +259,7 @@
 								<md-card-content layout="column" layout-align="left top">
 									<div layout="row" layout-align="space-between top" class="md-body-smallest kpi-label">
                                     <span class="md-body-smallest kpi-label">Application SLA Compliance</span>
-                                    <md-select class="md-body-smallest custom-select" ng-model="omHome.selectedApp.id"  ng-change="onSLAComplianceAppChange()">
+                                    <md-select class="md-body-smallest custom-select" ng-model="omHome.selectedApp.id"  ng-change="omHome.onSLAComplianceAppChange()">
                                     <md-option ng-value="app.id" ng-repeat="app in omHome.ticketCategoryGroups">{{ app.label }}</md-option>
                                   </md-select>
                                   </div>
@@ -274,10 +274,10 @@
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.bySLAComplianceApp">
-                                            <td class="md-table-content">{{dt.appName}}</td>
-                                            <td class="md-table-content">{{dt.withinSLACount}}</td>
-                                            <td class="md-table-content">{{dt.beyondSLACount}}</td>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.bySLAComplianceApp | orderBy:'appName' ">
+                                            <td class="md-table-content"  ng-bind=dt.appName></td>
+                                            <td class="md-table-content"  ng-bind=dt.withinSLACount></td>
+                                            <td class="md-table-content"  ng-bind=dt.beyondSLACount></td>
                                           </tr>
                                         </tbody>
                                       </table>
@@ -293,7 +293,7 @@
 								<md-card-content layout="column" layout-align="left top">
 									<div layout="row" layout-align="space-between top">
                                     <span class="md-body-smallest kpi-label">Team SLA Compliance</span>
-                                    <md-select class="md-body-smallest custom-select" ng-model="omHome.selectedTeam.id"  ng-change="onSLAComplianceTeamChange()">
+                                    <md-select class="md-body-smallest custom-select" ng-model="omHome.selectedTeam.id"  ng-change="omHome.onSLAComplianceTeamChange()">
                                     <md-option ng-value="app.id" ng-repeat="app in omHome.ticketCategoryGroups">{{ app.label }}</md-option>
                                   </md-select>
                                   </div>
@@ -308,10 +308,10 @@
                                           </tr>
                                         </thead>
                                         <tbody>
-                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.bySLAComplianceTeam">
-                                            <td class="md-table-content">{{dt.personName}}</td>
-                                            <td class="md-table-content">{{dt.withinSLACount}}</td>
-                                            <td class="md-table-content">{{dt.beyondSLACount}}</td>
+                                          <tr class="md-table-content-row" ng-repeat="dt in omHome.bySLAComplianceTeam | orderBy:'personName' ">
+                                            <td class="md-table-content"  ng-bind=dt.personName></td>
+                                            <td class="md-table-content"  ng-bind=dt.withinSLACount></td>
+                                            <td class="md-table-content"  ng-bind=dt.beyondSLACount></td>
                                           </tr>
                                         </tbody>
                                       </table>

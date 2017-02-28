@@ -1,35 +1,26 @@
 <div layout="column" layout-fill>
 	<md-toolbar>
-		<div class="md-toolbar-tools" layout="row" layout-align="center center">
+		<!--<div class="md-toolbar-tools" layout="row" layout-align="space-between center">-->
+		<!--<div class="md-toolbar-tools" layout="row" layout-align="center center">-->
+		<div class="md-toolbar-tools" layout="row" layout-align="start center">
 
-			<a href="#"><img class="logo" src="assets/img/ibm-white.png" alt="IBM logo"> </a>
+			<a class="link-client" href="#">
+				<img class="logo" src="assets/img/ibm-white.png" alt="IBM logo">
+			</a>
 
-			<p class="md-body-1 page-heading" data-content="{{ login.title }}"></p>
-			<!--<div style="width: 40px; height: 40px;"></div>-->
+			<p class="md-body-1 page-heading md-accent" data-content="{{ login.title }}" ng-bind="login.title" ></p>
 
-			<md-button class="md-icon-button" aria-label="Menu" ng-click="cooHome.toggle()">
+			<div class="user-role md-body-smallest" ng-bind="login.userRole" ></div>
+
+			<md-button class="md-icon-button hamburger-button" aria-label="Menu" ng-click="cooHome.toggleRight()">
 				<!--<md-icon>menu</md-icon>-->
 			</md-button>
 
+
+
 		</div>
 	</md-toolbar>
-
-	<md-sidenav class="md-sidenav-left" md-component-id="left">
-	  <md-toolbar>
-		<h1 class="md-toolbar-tools">SideNav Menu</h1>
-	  </md-toolbar>
-	  <md-list ng-cloak>
-		<md-list-item ng-href="http://www.google.com/design/spec/material-design/introduction.html">
-		  <md-icon style="padding-right: 16px; color: #000000">school</md-icon>
-		  <md-icon md-font-library="material-icons">face</md-icon>
-		  <p>Material Design</p>
-		</md-list-item>
-		<md-list-item ng-href="https://material.angularjs.org/latest/">
-		  <md-icon style="padding-right: 16px; color: #000000">settings_ethernet</md-icon>
-		  <p>Angular Material</p>
-		</md-list-item>
-	  </md-list>
-	</md-sidenav>
+	
 
 	<md-content>
 		<div layout="row"  class="md-layout-row layout-margin loginform" layout-xs="column" layout-sm="column" layout-gt-sm="row" layout-align="center center" >

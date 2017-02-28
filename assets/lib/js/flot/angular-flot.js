@@ -28,6 +28,7 @@
 
 angular.module('angular-flot', []).directive('flot', ['$timeout', '$window', function ($timeout, $window) {
 	return {
+		priority: Number.MIN_SAFE_INTEGER,
 		restrict: 'EA',
 		template: '<div></div>',
 		scope: {
@@ -70,17 +71,17 @@ angular.module('angular-flot', []).directive('flot', ['$timeout', '$window', fun
 
 			var init = function () {
 				var plotObj// = $.plot(plotArea, scope.dataset, scope.options);
-		
-		
+
+
 				$timeout(function () {
 					plotObj = $.plot(plotArea, scope.dataset, scope.options);
-					
+
 					if (scope.callback) {
 					  scope.callback(plotObj);
 					}
 					return plotObj;
 				});
-	
+
 /*
         if (scope.callback) {
           scope.callback(plotObj);
@@ -157,7 +158,7 @@ angular.module('angular-flot', []).directive('flot', ['$timeout', '$window', fun
 				height = value;
 				plotArea.css('height', value);
 			});
-	  
+
 
 
       //
